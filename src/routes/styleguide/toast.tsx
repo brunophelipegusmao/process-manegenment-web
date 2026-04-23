@@ -171,12 +171,3 @@ function ToastPage() {
       </div>
    );
 }
-import { createFileRoute } from '@tanstack/react-router';
-
-export const Route = createFileRoute('/styleguide/toast')({
-   component: RouteComponent,
-});
-
-function RouteComponent() {
-   return <div>Hello "/styleguide/toast"!</div>;
-}

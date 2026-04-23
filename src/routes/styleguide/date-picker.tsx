@@ -172,12 +172,3 @@ function DatePickerPage() {
       </div>
    );
 }
-import { createFileRoute } from '@tanstack/react-router';
-
-export const Route = createFileRoute('/styleguide/date-picker')({
-   component: RouteComponent,
-});
-
-function RouteComponent() {
-   return <div>Hello "/styleguide/date-picker"!</div>;
-}

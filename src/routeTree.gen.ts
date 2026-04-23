@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as StyleguideIndexRouteImport } from './routes/styleguide/index'
 import { Route as StyleguideTypographyRouteImport } from './routes/styleguide/typography'
+import { Route as StyleguideToastRouteImport } from './routes/styleguide/toast'
 import { Route as StyleguideTextareaRouteImport } from './routes/styleguide/textarea'
 import { Route as StyleguideTabsRouteImport } from './routes/styleguide/tabs'
 import { Route as StyleguideTableRouteImport } from './routes/styleguide/table'
@@ -27,12 +28,15 @@ import { Route as StyleguideInputRouteImport } from './routes/styleguide/input'
 import { Route as StyleguideFormsRouteImport } from './routes/styleguide/forms'
 import { Route as StyleguideDropdownMenuRouteImport } from './routes/styleguide/dropdown-menu'
 import { Route as StyleguideDialogRouteImport } from './routes/styleguide/dialog'
+import { Route as StyleguideDatePickerRouteImport } from './routes/styleguide/date-picker'
+import { Route as StyleguideCommandRouteImport } from './routes/styleguide/command'
 import { Route as StyleguideColorsRouteImport } from './routes/styleguide/colors'
 import { Route as StyleguideCardsRouteImport } from './routes/styleguide/cards'
 import { Route as StyleguideCalendarRouteImport } from './routes/styleguide/calendar'
 import { Route as StyleguideButtonsRouteImport } from './routes/styleguide/buttons'
 import { Route as StyleguideBreadcrumbRouteImport } from './routes/styleguide/breadcrumb'
 import { Route as StyleguideBadgesRouteImport } from './routes/styleguide/badges'
+import { Route as StyleguideAvatarRouteImport } from './routes/styleguide/avatar'
 import { Route as StyleguideAlertsRouteImport } from './routes/styleguide/alerts'
 import { Route as StyleguideLayoutRouteImport } from './routes/styleguide/_layout'
 
@@ -49,6 +53,11 @@ const StyleguideIndexRoute = StyleguideIndexRouteImport.update({
 const StyleguideTypographyRoute = StyleguideTypographyRouteImport.update({
   id: '/styleguide/typography',
   path: '/styleguide/typography',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StyleguideToastRoute = StyleguideToastRouteImport.update({
+  id: '/styleguide/toast',
+  path: '/styleguide/toast',
   getParentRoute: () => rootRouteImport,
 } as any)
 const StyleguideTextareaRoute = StyleguideTextareaRouteImport.update({
@@ -126,6 +135,16 @@ const StyleguideDialogRoute = StyleguideDialogRouteImport.update({
   path: '/styleguide/dialog',
   getParentRoute: () => rootRouteImport,
 } as any)
+const StyleguideDatePickerRoute = StyleguideDatePickerRouteImport.update({
+  id: '/styleguide/date-picker',
+  path: '/styleguide/date-picker',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StyleguideCommandRoute = StyleguideCommandRouteImport.update({
+  id: '/styleguide/command',
+  path: '/styleguide/command',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const StyleguideColorsRoute = StyleguideColorsRouteImport.update({
   id: '/styleguide/colors',
   path: '/styleguide/colors',
@@ -156,6 +175,11 @@ const StyleguideBadgesRoute = StyleguideBadgesRouteImport.update({
   path: '/styleguide/badges',
   getParentRoute: () => rootRouteImport,
 } as any)
+const StyleguideAvatarRoute = StyleguideAvatarRouteImport.update({
+  id: '/styleguide/avatar',
+  path: '/styleguide/avatar',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const StyleguideAlertsRoute = StyleguideAlertsRouteImport.update({
   id: '/styleguide/alerts',
   path: '/styleguide/alerts',
@@ -171,12 +195,15 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/styleguide': typeof StyleguideLayoutRoute
   '/styleguide/alerts': typeof StyleguideAlertsRoute
+  '/styleguide/avatar': typeof StyleguideAvatarRoute
   '/styleguide/badges': typeof StyleguideBadgesRoute
   '/styleguide/breadcrumb': typeof StyleguideBreadcrumbRoute
   '/styleguide/buttons': typeof StyleguideButtonsRoute
   '/styleguide/calendar': typeof StyleguideCalendarRoute
   '/styleguide/cards': typeof StyleguideCardsRoute
   '/styleguide/colors': typeof StyleguideColorsRoute
+  '/styleguide/command': typeof StyleguideCommandRoute
+  '/styleguide/date-picker': typeof StyleguideDatePickerRoute
   '/styleguide/dialog': typeof StyleguideDialogRoute
   '/styleguide/dropdown-menu': typeof StyleguideDropdownMenuRoute
   '/styleguide/forms': typeof StyleguideFormsRoute
@@ -192,6 +219,7 @@ export interface FileRoutesByFullPath {
   '/styleguide/table': typeof StyleguideTableRoute
   '/styleguide/tabs': typeof StyleguideTabsRoute
   '/styleguide/textarea': typeof StyleguideTextareaRoute
+  '/styleguide/toast': typeof StyleguideToastRoute
   '/styleguide/typography': typeof StyleguideTypographyRoute
   '/styleguide/': typeof StyleguideIndexRoute
 }
@@ -199,12 +227,15 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/styleguide': typeof StyleguideIndexRoute
   '/styleguide/alerts': typeof StyleguideAlertsRoute
+  '/styleguide/avatar': typeof StyleguideAvatarRoute
   '/styleguide/badges': typeof StyleguideBadgesRoute
   '/styleguide/breadcrumb': typeof StyleguideBreadcrumbRoute
   '/styleguide/buttons': typeof StyleguideButtonsRoute
   '/styleguide/calendar': typeof StyleguideCalendarRoute
   '/styleguide/cards': typeof StyleguideCardsRoute
   '/styleguide/colors': typeof StyleguideColorsRoute
+  '/styleguide/command': typeof StyleguideCommandRoute
+  '/styleguide/date-picker': typeof StyleguideDatePickerRoute
   '/styleguide/dialog': typeof StyleguideDialogRoute
   '/styleguide/dropdown-menu': typeof StyleguideDropdownMenuRoute
   '/styleguide/forms': typeof StyleguideFormsRoute
@@ -220,6 +251,7 @@ export interface FileRoutesByTo {
   '/styleguide/table': typeof StyleguideTableRoute
   '/styleguide/tabs': typeof StyleguideTabsRoute
   '/styleguide/textarea': typeof StyleguideTextareaRoute
+  '/styleguide/toast': typeof StyleguideToastRoute
   '/styleguide/typography': typeof StyleguideTypographyRoute
 }
 export interface FileRoutesById {
@@ -227,12 +259,15 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/styleguide/_layout': typeof StyleguideLayoutRoute
   '/styleguide/alerts': typeof StyleguideAlertsRoute
+  '/styleguide/avatar': typeof StyleguideAvatarRoute
   '/styleguide/badges': typeof StyleguideBadgesRoute
   '/styleguide/breadcrumb': typeof StyleguideBreadcrumbRoute
   '/styleguide/buttons': typeof StyleguideButtonsRoute
   '/styleguide/calendar': typeof StyleguideCalendarRoute
   '/styleguide/cards': typeof StyleguideCardsRoute
   '/styleguide/colors': typeof StyleguideColorsRoute
+  '/styleguide/command': typeof StyleguideCommandRoute
+  '/styleguide/date-picker': typeof StyleguideDatePickerRoute
   '/styleguide/dialog': typeof StyleguideDialogRoute
   '/styleguide/dropdown-menu': typeof StyleguideDropdownMenuRoute
   '/styleguide/forms': typeof StyleguideFormsRoute
@@ -248,6 +283,7 @@ export interface FileRoutesById {
   '/styleguide/table': typeof StyleguideTableRoute
   '/styleguide/tabs': typeof StyleguideTabsRoute
   '/styleguide/textarea': typeof StyleguideTextareaRoute
+  '/styleguide/toast': typeof StyleguideToastRoute
   '/styleguide/typography': typeof StyleguideTypographyRoute
   '/styleguide/': typeof StyleguideIndexRoute
 }
@@ -257,12 +293,15 @@ export interface FileRouteTypes {
     | '/'
     | '/styleguide'
     | '/styleguide/alerts'
+    | '/styleguide/avatar'
     | '/styleguide/badges'
     | '/styleguide/breadcrumb'
     | '/styleguide/buttons'
     | '/styleguide/calendar'
     | '/styleguide/cards'
     | '/styleguide/colors'
+    | '/styleguide/command'
+    | '/styleguide/date-picker'
     | '/styleguide/dialog'
     | '/styleguide/dropdown-menu'
     | '/styleguide/forms'
@@ -278,6 +317,7 @@ export interface FileRouteTypes {
     | '/styleguide/table'
     | '/styleguide/tabs'
     | '/styleguide/textarea'
+    | '/styleguide/toast'
     | '/styleguide/typography'
     | '/styleguide/'
   fileRoutesByTo: FileRoutesByTo
@@ -285,12 +325,15 @@ export interface FileRouteTypes {
     | '/'
     | '/styleguide'
     | '/styleguide/alerts'
+    | '/styleguide/avatar'
     | '/styleguide/badges'
     | '/styleguide/breadcrumb'
     | '/styleguide/buttons'
     | '/styleguide/calendar'
     | '/styleguide/cards'
     | '/styleguide/colors'
+    | '/styleguide/command'
+    | '/styleguide/date-picker'
     | '/styleguide/dialog'
     | '/styleguide/dropdown-menu'
     | '/styleguide/forms'
@@ -306,18 +349,22 @@ export interface FileRouteTypes {
     | '/styleguide/table'
     | '/styleguide/tabs'
     | '/styleguide/textarea'
+    | '/styleguide/toast'
     | '/styleguide/typography'
   id:
     | '__root__'
     | '/'
     | '/styleguide/_layout'
     | '/styleguide/alerts'
+    | '/styleguide/avatar'
     | '/styleguide/badges'
     | '/styleguide/breadcrumb'
     | '/styleguide/buttons'
     | '/styleguide/calendar'
     | '/styleguide/cards'
     | '/styleguide/colors'
+    | '/styleguide/command'
+    | '/styleguide/date-picker'
     | '/styleguide/dialog'
     | '/styleguide/dropdown-menu'
     | '/styleguide/forms'
@@ -333,6 +380,7 @@ export interface FileRouteTypes {
     | '/styleguide/table'
     | '/styleguide/tabs'
     | '/styleguide/textarea'
+    | '/styleguide/toast'
     | '/styleguide/typography'
     | '/styleguide/'
   fileRoutesById: FileRoutesById
@@ -341,12 +389,15 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   StyleguideLayoutRoute: typeof StyleguideLayoutRoute
   StyleguideAlertsRoute: typeof StyleguideAlertsRoute
+  StyleguideAvatarRoute: typeof StyleguideAvatarRoute
   StyleguideBadgesRoute: typeof StyleguideBadgesRoute
   StyleguideBreadcrumbRoute: typeof StyleguideBreadcrumbRoute
   StyleguideButtonsRoute: typeof StyleguideButtonsRoute
   StyleguideCalendarRoute: typeof StyleguideCalendarRoute
   StyleguideCardsRoute: typeof StyleguideCardsRoute
   StyleguideColorsRoute: typeof StyleguideColorsRoute
+  StyleguideCommandRoute: typeof StyleguideCommandRoute
+  StyleguideDatePickerRoute: typeof StyleguideDatePickerRoute
   StyleguideDialogRoute: typeof StyleguideDialogRoute
   StyleguideDropdownMenuRoute: typeof StyleguideDropdownMenuRoute
   StyleguideFormsRoute: typeof StyleguideFormsRoute
@@ -362,6 +413,7 @@ export interface RootRouteChildren {
   StyleguideTableRoute: typeof StyleguideTableRoute
   StyleguideTabsRoute: typeof StyleguideTabsRoute
   StyleguideTextareaRoute: typeof StyleguideTextareaRoute
+  StyleguideToastRoute: typeof StyleguideToastRoute
   StyleguideTypographyRoute: typeof StyleguideTypographyRoute
   StyleguideIndexRoute: typeof StyleguideIndexRoute
 }
@@ -387,6 +439,13 @@ declare module '@tanstack/react-router' {
       path: '/styleguide/typography'
       fullPath: '/styleguide/typography'
       preLoaderRoute: typeof StyleguideTypographyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/styleguide/toast': {
+      id: '/styleguide/toast'
+      path: '/styleguide/toast'
+      fullPath: '/styleguide/toast'
+      preLoaderRoute: typeof StyleguideToastRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/styleguide/textarea': {
@@ -494,6 +553,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof StyleguideDialogRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/styleguide/date-picker': {
+      id: '/styleguide/date-picker'
+      path: '/styleguide/date-picker'
+      fullPath: '/styleguide/date-picker'
+      preLoaderRoute: typeof StyleguideDatePickerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/styleguide/command': {
+      id: '/styleguide/command'
+      path: '/styleguide/command'
+      fullPath: '/styleguide/command'
+      preLoaderRoute: typeof StyleguideCommandRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/styleguide/colors': {
       id: '/styleguide/colors'
       path: '/styleguide/colors'
@@ -536,6 +609,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof StyleguideBadgesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/styleguide/avatar': {
+      id: '/styleguide/avatar'
+      path: '/styleguide/avatar'
+      fullPath: '/styleguide/avatar'
+      preLoaderRoute: typeof StyleguideAvatarRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/styleguide/alerts': {
       id: '/styleguide/alerts'
       path: '/styleguide/alerts'
@@ -557,12 +637,15 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   StyleguideLayoutRoute: StyleguideLayoutRoute,
   StyleguideAlertsRoute: StyleguideAlertsRoute,
+  StyleguideAvatarRoute: StyleguideAvatarRoute,
   StyleguideBadgesRoute: StyleguideBadgesRoute,
   StyleguideBreadcrumbRoute: StyleguideBreadcrumbRoute,
   StyleguideButtonsRoute: StyleguideButtonsRoute,
   StyleguideCalendarRoute: StyleguideCalendarRoute,
   StyleguideCardsRoute: StyleguideCardsRoute,
   StyleguideColorsRoute: StyleguideColorsRoute,
+  StyleguideCommandRoute: StyleguideCommandRoute,
+  StyleguideDatePickerRoute: StyleguideDatePickerRoute,
   StyleguideDialogRoute: StyleguideDialogRoute,
   StyleguideDropdownMenuRoute: StyleguideDropdownMenuRoute,
   StyleguideFormsRoute: StyleguideFormsRoute,
@@ -578,6 +661,7 @@ const rootRouteChildren: RootRouteChildren = {
   StyleguideTableRoute: StyleguideTableRoute,
   StyleguideTabsRoute: StyleguideTabsRoute,
   StyleguideTextareaRoute: StyleguideTextareaRoute,
+  StyleguideToastRoute: StyleguideToastRoute,
   StyleguideTypographyRoute: StyleguideTypographyRoute,
   StyleguideIndexRoute: StyleguideIndexRoute,
 }
