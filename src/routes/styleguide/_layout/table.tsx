@@ -18,7 +18,7 @@ import {
    DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 
-export const Route = createFileRoute('/styleguide/table')({
+export const Route = createFileRoute('/styleguide/_layout/table')({
    component: TablePage,
 });
 

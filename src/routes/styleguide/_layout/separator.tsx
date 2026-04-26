@@ -2,7 +2,7 @@ import { createFileRoute } from '@tanstack/react-router';
 import { Separator } from '@/components/ui/separator';
 import { Badge } from '@/components/ui/badge';
 
-export const Route = createFileRoute('/styleguide/separator')({
+export const Route = createFileRoute('/styleguide/_layout/separator')({
    component: SeparatorPage,
 });
 

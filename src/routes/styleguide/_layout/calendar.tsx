@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Calendar } from '@/components/ui/calendar';
 import { ptBR } from 'date-fns/locale';
 
-export const Route = createFileRoute('/styleguide/calendar')({
+export const Route = createFileRoute('/styleguide/_layout/calendar')({
    component: CalendarPage,
 });
 

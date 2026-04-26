@@ -2,7 +2,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Badge } from '@/components/ui/badge'
 
-export const Route = createFileRoute('/styleguide/avatar')({
+export const Route = createFileRoute('/styleguide/_layout/avatar')({
   component: AvatarPage,
 })
 

@@ -28,7 +28,7 @@ import {
    LogOut,
 } from 'lucide-react';
 
-export const Route = createFileRoute('/styleguide/sidebar')({
+export const Route = createFileRoute('/styleguide/_layout/sidebar')({
    component: SidebarPage,
 });
 

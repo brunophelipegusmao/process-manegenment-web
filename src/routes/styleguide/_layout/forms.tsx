@@ -23,7 +23,7 @@ import {
 } from '@/components/ui/select';
 import { toast } from 'sonner';
 
-export const Route = createFileRoute('/styleguide/forms')({
+export const Route = createFileRoute('/styleguide/_layout/forms')({
    component: FormsPage,
 });
 

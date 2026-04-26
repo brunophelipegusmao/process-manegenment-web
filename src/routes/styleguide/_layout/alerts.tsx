@@ -2,7 +2,7 @@ import { createFileRoute } from '@tanstack/react-router';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { AlertCircle, CheckCircle2, Info, TriangleAlert } from 'lucide-react';
 
-export const Route = createFileRoute('/styleguide/alerts')({
+export const Route = createFileRoute('/styleguide/_layout/alerts')({
    component: AlertsPage,
 });
 

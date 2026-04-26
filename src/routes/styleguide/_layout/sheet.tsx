@@ -15,7 +15,7 @@ import { Separator } from '@/components/ui/separator';
 import { Badge } from '@/components/ui/badge';
 import { FileText, Calendar, User, ChevronRight } from 'lucide-react';
 
-export const Route = createFileRoute('/styleguide/sheet')({
+export const Route = createFileRoute('/styleguide/_layout/sheet')({
    component: SheetPage,
 });
 

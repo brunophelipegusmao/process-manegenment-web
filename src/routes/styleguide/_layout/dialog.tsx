@@ -14,7 +14,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Trash2 } from 'lucide-react';
 
-export const Route = createFileRoute('/styleguide/dialog')({
+export const Route = createFileRoute('/styleguide/_layout/dialog')({
    component: DialogPage,
 });
 

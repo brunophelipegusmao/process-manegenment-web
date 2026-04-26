@@ -9,7 +9,7 @@ import {
    Loader2,
 } from 'lucide-react';
 
-export const Route = createFileRoute('/styleguide/toast')({
+export const Route = createFileRoute('/styleguide/_layout/toast')({
    component: ToastPage,
 });
 

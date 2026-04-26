@@ -23,7 +23,7 @@ import {
    LayoutDashboard,
 } from 'lucide-react';
 
-export const Route = createFileRoute('/styleguide/command')({
+export const Route = createFileRoute('/styleguide/_layout/command')({
    component: CommandPage,
 });
 

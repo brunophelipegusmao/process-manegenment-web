@@ -23,7 +23,7 @@ import {
    MoreHorizontal,
 } from 'lucide-react';
 
-export const Route = createFileRoute('/styleguide/dropdown-menu')({
+export const Route = createFileRoute('/styleguide/_layout/dropdown-menu')({
    component: DropdownMenuPage,
 });
 

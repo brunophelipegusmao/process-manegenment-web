@@ -10,7 +10,7 @@ import {
 import { Badge } from '@/components/ui/badge';
 import { FileText, Clock, CheckCircle2 } from 'lucide-react';
 
-export const Route = createFileRoute('/styleguide/tabs')({
+export const Route = createFileRoute('/styleguide/_layout/tabs')({
    component: TabsPage,
 });
 

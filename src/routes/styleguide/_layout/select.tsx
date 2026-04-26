@@ -10,7 +10,7 @@ import {
 } from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
 
-export const Route = createFileRoute('/styleguide/select')({
+export const Route = createFileRoute('/styleguide/_layout/select')({
    component: SelectPage,
 });
 

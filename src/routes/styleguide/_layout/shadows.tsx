@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router';
 
-export const Route = createFileRoute('/styleguide/shadows')({
+export const Route = createFileRoute('/styleguide/_layout/shadows')({
    component: ShadowsPage,
 });
 

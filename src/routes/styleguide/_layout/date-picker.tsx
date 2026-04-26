@@ -13,7 +13,7 @@ import { CalendarIcon } from 'lucide-react';
 import { format } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
 
-export const Route = createFileRoute('/styleguide/date-picker')({
+export const Route = createFileRoute('/styleguide/_layout/date-picker')({
    component: DatePickerPage,
 });
 

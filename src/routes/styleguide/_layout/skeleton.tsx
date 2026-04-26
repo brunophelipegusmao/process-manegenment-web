@@ -2,7 +2,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import { Skeleton } from '@/components/ui/skeleton'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 
-export const Route = createFileRoute('/styleguide/skeleton')({
+export const Route = createFileRoute('/styleguide/_layout/skeleton')({
   component: SkeletonPage,
 })
 

@@ -4,7 +4,7 @@ import {
    createFileRoute,
    useRouterState,
 } from '@tanstack/react-router';
-import { navigation } from './-navigation';
+import { navigation } from './_layout/-navigation';
 
 export const Route = createFileRoute('/styleguide/_layout')({
    component: StyleguideLayout,

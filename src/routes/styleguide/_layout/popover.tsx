@@ -9,7 +9,7 @@ import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { Info, Bell, Calendar, ChevronDown } from 'lucide-react';
 
-export const Route = createFileRoute('/styleguide/popover')({
+export const Route = createFileRoute('/styleguide/_layout/popover')({
    component: PopoverPage,
 });
 

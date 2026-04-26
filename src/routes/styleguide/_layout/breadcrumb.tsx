@@ -9,7 +9,7 @@ import {
    BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb';
 
-export const Route = createFileRoute('/styleguide/breadcrumb')({
+export const Route = createFileRoute('/styleguide/_layout/breadcrumb')({
    component: BreadcrumbPage_,
 });
 

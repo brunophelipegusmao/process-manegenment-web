@@ -2,7 +2,7 @@ import { createFileRoute } from '@tanstack/react-router';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 
-export const Route = createFileRoute('/styleguide/textarea')({
+export const Route = createFileRoute('/styleguide/_layout/textarea')({
    component: TextareaPage,
 });
 

@@ -2,7 +2,7 @@ import { createFileRoute } from '@tanstack/react-router';
 import { Button } from '@/components/ui/button';
 import { Loader2, Plus, Trash2, Download, ChevronRight } from 'lucide-react';
 
-export const Route = createFileRoute('/styleguide/buttons')({
+export const Route = createFileRoute('/styleguide/_layout/buttons')({
    component: ButtonsPage,
 });
 

@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router';
 
-export const Route = createFileRoute('/styleguide/spacing')({
+export const Route = createFileRoute('/styleguide/_layout/spacing')({
    component: SpacingPage,
 });
 

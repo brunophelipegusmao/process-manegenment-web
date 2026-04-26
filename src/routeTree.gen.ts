@@ -10,179 +10,39 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as StyleguideIndexRouteImport } from './routes/styleguide/index'
-import { Route as StyleguideTypographyRouteImport } from './routes/styleguide/typography'
-import { Route as StyleguideToastRouteImport } from './routes/styleguide/toast'
-import { Route as StyleguideTextareaRouteImport } from './routes/styleguide/textarea'
-import { Route as StyleguideTabsRouteImport } from './routes/styleguide/tabs'
-import { Route as StyleguideTableRouteImport } from './routes/styleguide/table'
-import { Route as StyleguideSpacingRouteImport } from './routes/styleguide/spacing'
-import { Route as StyleguideSkeletonRouteImport } from './routes/styleguide/skeleton'
-import { Route as StyleguideSidebarRouteImport } from './routes/styleguide/sidebar'
-import { Route as StyleguideSheetRouteImport } from './routes/styleguide/sheet'
-import { Route as StyleguideShadowsRouteImport } from './routes/styleguide/shadows'
-import { Route as StyleguideSeparatorRouteImport } from './routes/styleguide/separator'
-import { Route as StyleguideSelectRouteImport } from './routes/styleguide/select'
-import { Route as StyleguidePopoverRouteImport } from './routes/styleguide/popover'
-import { Route as StyleguideInputRouteImport } from './routes/styleguide/input'
-import { Route as StyleguideFormsRouteImport } from './routes/styleguide/forms'
-import { Route as StyleguideDropdownMenuRouteImport } from './routes/styleguide/dropdown-menu'
-import { Route as StyleguideDialogRouteImport } from './routes/styleguide/dialog'
-import { Route as StyleguideDatePickerRouteImport } from './routes/styleguide/date-picker'
-import { Route as StyleguideCommandRouteImport } from './routes/styleguide/command'
-import { Route as StyleguideColorsRouteImport } from './routes/styleguide/colors'
-import { Route as StyleguideCardsRouteImport } from './routes/styleguide/cards'
-import { Route as StyleguideCalendarRouteImport } from './routes/styleguide/calendar'
-import { Route as StyleguideButtonsRouteImport } from './routes/styleguide/buttons'
-import { Route as StyleguideBreadcrumbRouteImport } from './routes/styleguide/breadcrumb'
-import { Route as StyleguideBadgesRouteImport } from './routes/styleguide/badges'
-import { Route as StyleguideAvatarRouteImport } from './routes/styleguide/avatar'
-import { Route as StyleguideAlertsRouteImport } from './routes/styleguide/alerts'
 import { Route as StyleguideLayoutRouteImport } from './routes/styleguide/_layout'
+import { Route as StyleguideLayoutIndexRouteImport } from './routes/styleguide/_layout/index'
+import { Route as StyleguideLayoutTypographyRouteImport } from './routes/styleguide/_layout/typography'
+import { Route as StyleguideLayoutToastRouteImport } from './routes/styleguide/_layout/toast'
+import { Route as StyleguideLayoutTextareaRouteImport } from './routes/styleguide/_layout/textarea'
+import { Route as StyleguideLayoutTabsRouteImport } from './routes/styleguide/_layout/tabs'
+import { Route as StyleguideLayoutTableRouteImport } from './routes/styleguide/_layout/table'
+import { Route as StyleguideLayoutSpacingRouteImport } from './routes/styleguide/_layout/spacing'
+import { Route as StyleguideLayoutSkeletonRouteImport } from './routes/styleguide/_layout/skeleton'
+import { Route as StyleguideLayoutSidebarRouteImport } from './routes/styleguide/_layout/sidebar'
+import { Route as StyleguideLayoutSheetRouteImport } from './routes/styleguide/_layout/sheet'
+import { Route as StyleguideLayoutShadowsRouteImport } from './routes/styleguide/_layout/shadows'
+import { Route as StyleguideLayoutSeparatorRouteImport } from './routes/styleguide/_layout/separator'
+import { Route as StyleguideLayoutSelectRouteImport } from './routes/styleguide/_layout/select'
+import { Route as StyleguideLayoutPopoverRouteImport } from './routes/styleguide/_layout/popover'
+import { Route as StyleguideLayoutInputRouteImport } from './routes/styleguide/_layout/input'
+import { Route as StyleguideLayoutFormsRouteImport } from './routes/styleguide/_layout/forms'
+import { Route as StyleguideLayoutDropdownMenuRouteImport } from './routes/styleguide/_layout/dropdown-menu'
+import { Route as StyleguideLayoutDialogRouteImport } from './routes/styleguide/_layout/dialog'
+import { Route as StyleguideLayoutDatePickerRouteImport } from './routes/styleguide/_layout/date-picker'
+import { Route as StyleguideLayoutCommandRouteImport } from './routes/styleguide/_layout/command'
+import { Route as StyleguideLayoutColorsRouteImport } from './routes/styleguide/_layout/colors'
+import { Route as StyleguideLayoutCardsRouteImport } from './routes/styleguide/_layout/cards'
+import { Route as StyleguideLayoutCalendarRouteImport } from './routes/styleguide/_layout/calendar'
+import { Route as StyleguideLayoutButtonsRouteImport } from './routes/styleguide/_layout/buttons'
+import { Route as StyleguideLayoutBreadcrumbRouteImport } from './routes/styleguide/_layout/breadcrumb'
+import { Route as StyleguideLayoutBadgesRouteImport } from './routes/styleguide/_layout/badges'
+import { Route as StyleguideLayoutAvatarRouteImport } from './routes/styleguide/_layout/avatar'
+import { Route as StyleguideLayoutAlertsRouteImport } from './routes/styleguide/_layout/alerts'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideIndexRoute = StyleguideIndexRouteImport.update({
-  id: '/styleguide/',
-  path: '/styleguide/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideTypographyRoute = StyleguideTypographyRouteImport.update({
-  id: '/styleguide/typography',
-  path: '/styleguide/typography',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideToastRoute = StyleguideToastRouteImport.update({
-  id: '/styleguide/toast',
-  path: '/styleguide/toast',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideTextareaRoute = StyleguideTextareaRouteImport.update({
-  id: '/styleguide/textarea',
-  path: '/styleguide/textarea',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideTabsRoute = StyleguideTabsRouteImport.update({
-  id: '/styleguide/tabs',
-  path: '/styleguide/tabs',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideTableRoute = StyleguideTableRouteImport.update({
-  id: '/styleguide/table',
-  path: '/styleguide/table',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideSpacingRoute = StyleguideSpacingRouteImport.update({
-  id: '/styleguide/spacing',
-  path: '/styleguide/spacing',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideSkeletonRoute = StyleguideSkeletonRouteImport.update({
-  id: '/styleguide/skeleton',
-  path: '/styleguide/skeleton',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideSidebarRoute = StyleguideSidebarRouteImport.update({
-  id: '/styleguide/sidebar',
-  path: '/styleguide/sidebar',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideSheetRoute = StyleguideSheetRouteImport.update({
-  id: '/styleguide/sheet',
-  path: '/styleguide/sheet',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideShadowsRoute = StyleguideShadowsRouteImport.update({
-  id: '/styleguide/shadows',
-  path: '/styleguide/shadows',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideSeparatorRoute = StyleguideSeparatorRouteImport.update({
-  id: '/styleguide/separator',
-  path: '/styleguide/separator',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideSelectRoute = StyleguideSelectRouteImport.update({
-  id: '/styleguide/select',
-  path: '/styleguide/select',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguidePopoverRoute = StyleguidePopoverRouteImport.update({
-  id: '/styleguide/popover',
-  path: '/styleguide/popover',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideInputRoute = StyleguideInputRouteImport.update({
-  id: '/styleguide/input',
-  path: '/styleguide/input',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideFormsRoute = StyleguideFormsRouteImport.update({
-  id: '/styleguide/forms',
-  path: '/styleguide/forms',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideDropdownMenuRoute = StyleguideDropdownMenuRouteImport.update({
-  id: '/styleguide/dropdown-menu',
-  path: '/styleguide/dropdown-menu',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideDialogRoute = StyleguideDialogRouteImport.update({
-  id: '/styleguide/dialog',
-  path: '/styleguide/dialog',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideDatePickerRoute = StyleguideDatePickerRouteImport.update({
-  id: '/styleguide/date-picker',
-  path: '/styleguide/date-picker',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideCommandRoute = StyleguideCommandRouteImport.update({
-  id: '/styleguide/command',
-  path: '/styleguide/command',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideColorsRoute = StyleguideColorsRouteImport.update({
-  id: '/styleguide/colors',
-  path: '/styleguide/colors',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideCardsRoute = StyleguideCardsRouteImport.update({
-  id: '/styleguide/cards',
-  path: '/styleguide/cards',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideCalendarRoute = StyleguideCalendarRouteImport.update({
-  id: '/styleguide/calendar',
-  path: '/styleguide/calendar',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideButtonsRoute = StyleguideButtonsRouteImport.update({
-  id: '/styleguide/buttons',
-  path: '/styleguide/buttons',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideBreadcrumbRoute = StyleguideBreadcrumbRouteImport.update({
-  id: '/styleguide/breadcrumb',
-  path: '/styleguide/breadcrumb',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideBadgesRoute = StyleguideBadgesRouteImport.update({
-  id: '/styleguide/badges',
-  path: '/styleguide/badges',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideAvatarRoute = StyleguideAvatarRouteImport.update({
-  id: '/styleguide/avatar',
-  path: '/styleguide/avatar',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StyleguideAlertsRoute = StyleguideAlertsRouteImport.update({
-  id: '/styleguide/alerts',
-  path: '/styleguide/alerts',
   getParentRoute: () => rootRouteImport,
 } as any)
 const StyleguideLayoutRoute = StyleguideLayoutRouteImport.update({
@@ -190,102 +50,250 @@ const StyleguideLayoutRoute = StyleguideLayoutRouteImport.update({
   path: '/styleguide',
   getParentRoute: () => rootRouteImport,
 } as any)
+const StyleguideLayoutIndexRoute = StyleguideLayoutIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => StyleguideLayoutRoute,
+} as any)
+const StyleguideLayoutTypographyRoute =
+  StyleguideLayoutTypographyRouteImport.update({
+    id: '/typography',
+    path: '/typography',
+    getParentRoute: () => StyleguideLayoutRoute,
+  } as any)
+const StyleguideLayoutToastRoute = StyleguideLayoutToastRouteImport.update({
+  id: '/toast',
+  path: '/toast',
+  getParentRoute: () => StyleguideLayoutRoute,
+} as any)
+const StyleguideLayoutTextareaRoute =
+  StyleguideLayoutTextareaRouteImport.update({
+    id: '/textarea',
+    path: '/textarea',
+    getParentRoute: () => StyleguideLayoutRoute,
+  } as any)
+const StyleguideLayoutTabsRoute = StyleguideLayoutTabsRouteImport.update({
+  id: '/tabs',
+  path: '/tabs',
+  getParentRoute: () => StyleguideLayoutRoute,
+} as any)
+const StyleguideLayoutTableRoute = StyleguideLayoutTableRouteImport.update({
+  id: '/table',
+  path: '/table',
+  getParentRoute: () => StyleguideLayoutRoute,
+} as any)
+const StyleguideLayoutSpacingRoute = StyleguideLayoutSpacingRouteImport.update({
+  id: '/spacing',
+  path: '/spacing',
+  getParentRoute: () => StyleguideLayoutRoute,
+} as any)
+const StyleguideLayoutSkeletonRoute =
+  StyleguideLayoutSkeletonRouteImport.update({
+    id: '/skeleton',
+    path: '/skeleton',
+    getParentRoute: () => StyleguideLayoutRoute,
+  } as any)
+const StyleguideLayoutSidebarRoute = StyleguideLayoutSidebarRouteImport.update({
+  id: '/sidebar',
+  path: '/sidebar',
+  getParentRoute: () => StyleguideLayoutRoute,
+} as any)
+const StyleguideLayoutSheetRoute = StyleguideLayoutSheetRouteImport.update({
+  id: '/sheet',
+  path: '/sheet',
+  getParentRoute: () => StyleguideLayoutRoute,
+} as any)
+const StyleguideLayoutShadowsRoute = StyleguideLayoutShadowsRouteImport.update({
+  id: '/shadows',
+  path: '/shadows',
+  getParentRoute: () => StyleguideLayoutRoute,
+} as any)
+const StyleguideLayoutSeparatorRoute =
+  StyleguideLayoutSeparatorRouteImport.update({
+    id: '/separator',
+    path: '/separator',
+    getParentRoute: () => StyleguideLayoutRoute,
+  } as any)
+const StyleguideLayoutSelectRoute = StyleguideLayoutSelectRouteImport.update({
+  id: '/select',
+  path: '/select',
+  getParentRoute: () => StyleguideLayoutRoute,
+} as any)
+const StyleguideLayoutPopoverRoute = StyleguideLayoutPopoverRouteImport.update({
+  id: '/popover',
+  path: '/popover',
+  getParentRoute: () => StyleguideLayoutRoute,
+} as any)
+const StyleguideLayoutInputRoute = StyleguideLayoutInputRouteImport.update({
+  id: '/input',
+  path: '/input',
+  getParentRoute: () => StyleguideLayoutRoute,
+} as any)
+const StyleguideLayoutFormsRoute = StyleguideLayoutFormsRouteImport.update({
+  id: '/forms',
+  path: '/forms',
+  getParentRoute: () => StyleguideLayoutRoute,
+} as any)
+const StyleguideLayoutDropdownMenuRoute =
+  StyleguideLayoutDropdownMenuRouteImport.update({
+    id: '/dropdown-menu',
+    path: '/dropdown-menu',
+    getParentRoute: () => StyleguideLayoutRoute,
+  } as any)
+const StyleguideLayoutDialogRoute = StyleguideLayoutDialogRouteImport.update({
+  id: '/dialog',
+  path: '/dialog',
+  getParentRoute: () => StyleguideLayoutRoute,
+} as any)
+const StyleguideLayoutDatePickerRoute =
+  StyleguideLayoutDatePickerRouteImport.update({
+    id: '/date-picker',
+    path: '/date-picker',
+    getParentRoute: () => StyleguideLayoutRoute,
+  } as any)
+const StyleguideLayoutCommandRoute = StyleguideLayoutCommandRouteImport.update({
+  id: '/command',
+  path: '/command',
+  getParentRoute: () => StyleguideLayoutRoute,
+} as any)
+const StyleguideLayoutColorsRoute = StyleguideLayoutColorsRouteImport.update({
+  id: '/colors',
+  path: '/colors',
+  getParentRoute: () => StyleguideLayoutRoute,
+} as any)
+const StyleguideLayoutCardsRoute = StyleguideLayoutCardsRouteImport.update({
+  id: '/cards',
+  path: '/cards',
+  getParentRoute: () => StyleguideLayoutRoute,
+} as any)
+const StyleguideLayoutCalendarRoute =
+  StyleguideLayoutCalendarRouteImport.update({
+    id: '/calendar',
+    path: '/calendar',
+    getParentRoute: () => StyleguideLayoutRoute,
+  } as any)
+const StyleguideLayoutButtonsRoute = StyleguideLayoutButtonsRouteImport.update({
+  id: '/buttons',
+  path: '/buttons',
+  getParentRoute: () => StyleguideLayoutRoute,
+} as any)
+const StyleguideLayoutBreadcrumbRoute =
+  StyleguideLayoutBreadcrumbRouteImport.update({
+    id: '/breadcrumb',
+    path: '/breadcrumb',
+    getParentRoute: () => StyleguideLayoutRoute,
+  } as any)
+const StyleguideLayoutBadgesRoute = StyleguideLayoutBadgesRouteImport.update({
+  id: '/badges',
+  path: '/badges',
+  getParentRoute: () => StyleguideLayoutRoute,
+} as any)
+const StyleguideLayoutAvatarRoute = StyleguideLayoutAvatarRouteImport.update({
+  id: '/avatar',
+  path: '/avatar',
+  getParentRoute: () => StyleguideLayoutRoute,
+} as any)
+const StyleguideLayoutAlertsRoute = StyleguideLayoutAlertsRouteImport.update({
+  id: '/alerts',
+  path: '/alerts',
+  getParentRoute: () => StyleguideLayoutRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/styleguide': typeof StyleguideLayoutRoute
-  '/styleguide/alerts': typeof StyleguideAlertsRoute
-  '/styleguide/avatar': typeof StyleguideAvatarRoute
-  '/styleguide/badges': typeof StyleguideBadgesRoute
-  '/styleguide/breadcrumb': typeof StyleguideBreadcrumbRoute
-  '/styleguide/buttons': typeof StyleguideButtonsRoute
-  '/styleguide/calendar': typeof StyleguideCalendarRoute
-  '/styleguide/cards': typeof StyleguideCardsRoute
-  '/styleguide/colors': typeof StyleguideColorsRoute
-  '/styleguide/command': typeof StyleguideCommandRoute
-  '/styleguide/date-picker': typeof StyleguideDatePickerRoute
-  '/styleguide/dialog': typeof StyleguideDialogRoute
-  '/styleguide/dropdown-menu': typeof StyleguideDropdownMenuRoute
-  '/styleguide/forms': typeof StyleguideFormsRoute
-  '/styleguide/input': typeof StyleguideInputRoute
-  '/styleguide/popover': typeof StyleguidePopoverRoute
-  '/styleguide/select': typeof StyleguideSelectRoute
-  '/styleguide/separator': typeof StyleguideSeparatorRoute
-  '/styleguide/shadows': typeof StyleguideShadowsRoute
-  '/styleguide/sheet': typeof StyleguideSheetRoute
-  '/styleguide/sidebar': typeof StyleguideSidebarRoute
-  '/styleguide/skeleton': typeof StyleguideSkeletonRoute
-  '/styleguide/spacing': typeof StyleguideSpacingRoute
-  '/styleguide/table': typeof StyleguideTableRoute
-  '/styleguide/tabs': typeof StyleguideTabsRoute
-  '/styleguide/textarea': typeof StyleguideTextareaRoute
-  '/styleguide/toast': typeof StyleguideToastRoute
-  '/styleguide/typography': typeof StyleguideTypographyRoute
-  '/styleguide/': typeof StyleguideIndexRoute
+  '/styleguide': typeof StyleguideLayoutRouteWithChildren
+  '/styleguide/alerts': typeof StyleguideLayoutAlertsRoute
+  '/styleguide/avatar': typeof StyleguideLayoutAvatarRoute
+  '/styleguide/badges': typeof StyleguideLayoutBadgesRoute
+  '/styleguide/breadcrumb': typeof StyleguideLayoutBreadcrumbRoute
+  '/styleguide/buttons': typeof StyleguideLayoutButtonsRoute
+  '/styleguide/calendar': typeof StyleguideLayoutCalendarRoute
+  '/styleguide/cards': typeof StyleguideLayoutCardsRoute
+  '/styleguide/colors': typeof StyleguideLayoutColorsRoute
+  '/styleguide/command': typeof StyleguideLayoutCommandRoute
+  '/styleguide/date-picker': typeof StyleguideLayoutDatePickerRoute
+  '/styleguide/dialog': typeof StyleguideLayoutDialogRoute
+  '/styleguide/dropdown-menu': typeof StyleguideLayoutDropdownMenuRoute
+  '/styleguide/forms': typeof StyleguideLayoutFormsRoute
+  '/styleguide/input': typeof StyleguideLayoutInputRoute
+  '/styleguide/popover': typeof StyleguideLayoutPopoverRoute
+  '/styleguide/select': typeof StyleguideLayoutSelectRoute
+  '/styleguide/separator': typeof StyleguideLayoutSeparatorRoute
+  '/styleguide/shadows': typeof StyleguideLayoutShadowsRoute
+  '/styleguide/sheet': typeof StyleguideLayoutSheetRoute
+  '/styleguide/sidebar': typeof StyleguideLayoutSidebarRoute
+  '/styleguide/skeleton': typeof StyleguideLayoutSkeletonRoute
+  '/styleguide/spacing': typeof StyleguideLayoutSpacingRoute
+  '/styleguide/table': typeof StyleguideLayoutTableRoute
+  '/styleguide/tabs': typeof StyleguideLayoutTabsRoute
+  '/styleguide/textarea': typeof StyleguideLayoutTextareaRoute
+  '/styleguide/toast': typeof StyleguideLayoutToastRoute
+  '/styleguide/typography': typeof StyleguideLayoutTypographyRoute
+  '/styleguide/': typeof StyleguideLayoutIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/styleguide': typeof StyleguideIndexRoute
-  '/styleguide/alerts': typeof StyleguideAlertsRoute
-  '/styleguide/avatar': typeof StyleguideAvatarRoute
-  '/styleguide/badges': typeof StyleguideBadgesRoute
-  '/styleguide/breadcrumb': typeof StyleguideBreadcrumbRoute
-  '/styleguide/buttons': typeof StyleguideButtonsRoute
-  '/styleguide/calendar': typeof StyleguideCalendarRoute
-  '/styleguide/cards': typeof StyleguideCardsRoute
-  '/styleguide/colors': typeof StyleguideColorsRoute
-  '/styleguide/command': typeof StyleguideCommandRoute
-  '/styleguide/date-picker': typeof StyleguideDatePickerRoute
-  '/styleguide/dialog': typeof StyleguideDialogRoute
-  '/styleguide/dropdown-menu': typeof StyleguideDropdownMenuRoute
-  '/styleguide/forms': typeof StyleguideFormsRoute
-  '/styleguide/input': typeof StyleguideInputRoute
-  '/styleguide/popover': typeof StyleguidePopoverRoute
-  '/styleguide/select': typeof StyleguideSelectRoute
-  '/styleguide/separator': typeof StyleguideSeparatorRoute
-  '/styleguide/shadows': typeof StyleguideShadowsRoute
-  '/styleguide/sheet': typeof StyleguideSheetRoute
-  '/styleguide/sidebar': typeof StyleguideSidebarRoute
-  '/styleguide/skeleton': typeof StyleguideSkeletonRoute
-  '/styleguide/spacing': typeof StyleguideSpacingRoute
-  '/styleguide/table': typeof StyleguideTableRoute
-  '/styleguide/tabs': typeof StyleguideTabsRoute
-  '/styleguide/textarea': typeof StyleguideTextareaRoute
-  '/styleguide/toast': typeof StyleguideToastRoute
-  '/styleguide/typography': typeof StyleguideTypographyRoute
+  '/styleguide/alerts': typeof StyleguideLayoutAlertsRoute
+  '/styleguide/avatar': typeof StyleguideLayoutAvatarRoute
+  '/styleguide/badges': typeof StyleguideLayoutBadgesRoute
+  '/styleguide/breadcrumb': typeof StyleguideLayoutBreadcrumbRoute
+  '/styleguide/buttons': typeof StyleguideLayoutButtonsRoute
+  '/styleguide/calendar': typeof StyleguideLayoutCalendarRoute
+  '/styleguide/cards': typeof StyleguideLayoutCardsRoute
+  '/styleguide/colors': typeof StyleguideLayoutColorsRoute
+  '/styleguide/command': typeof StyleguideLayoutCommandRoute
+  '/styleguide/date-picker': typeof StyleguideLayoutDatePickerRoute
+  '/styleguide/dialog': typeof StyleguideLayoutDialogRoute
+  '/styleguide/dropdown-menu': typeof StyleguideLayoutDropdownMenuRoute
+  '/styleguide/forms': typeof StyleguideLayoutFormsRoute
+  '/styleguide/input': typeof StyleguideLayoutInputRoute
+  '/styleguide/popover': typeof StyleguideLayoutPopoverRoute
+  '/styleguide/select': typeof StyleguideLayoutSelectRoute
+  '/styleguide/separator': typeof StyleguideLayoutSeparatorRoute
+  '/styleguide/shadows': typeof StyleguideLayoutShadowsRoute
+  '/styleguide/sheet': typeof StyleguideLayoutSheetRoute
+  '/styleguide/sidebar': typeof StyleguideLayoutSidebarRoute
+  '/styleguide/skeleton': typeof StyleguideLayoutSkeletonRoute
+  '/styleguide/spacing': typeof StyleguideLayoutSpacingRoute
+  '/styleguide/table': typeof StyleguideLayoutTableRoute
+  '/styleguide/tabs': typeof StyleguideLayoutTabsRoute
+  '/styleguide/textarea': typeof StyleguideLayoutTextareaRoute
+  '/styleguide/toast': typeof StyleguideLayoutToastRoute
+  '/styleguide/typography': typeof StyleguideLayoutTypographyRoute
+  '/styleguide': typeof StyleguideLayoutIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/styleguide/_layout': typeof StyleguideLayoutRoute
-  '/styleguide/alerts': typeof StyleguideAlertsRoute
-  '/styleguide/avatar': typeof StyleguideAvatarRoute
-  '/styleguide/badges': typeof StyleguideBadgesRoute
-  '/styleguide/breadcrumb': typeof StyleguideBreadcrumbRoute
-  '/styleguide/buttons': typeof StyleguideButtonsRoute
-  '/styleguide/calendar': typeof StyleguideCalendarRoute
-  '/styleguide/cards': typeof StyleguideCardsRoute
-  '/styleguide/colors': typeof StyleguideColorsRoute
-  '/styleguide/command': typeof StyleguideCommandRoute
-  '/styleguide/date-picker': typeof StyleguideDatePickerRoute
-  '/styleguide/dialog': typeof StyleguideDialogRoute
-  '/styleguide/dropdown-menu': typeof StyleguideDropdownMenuRoute
-  '/styleguide/forms': typeof StyleguideFormsRoute
-  '/styleguide/input': typeof StyleguideInputRoute
-  '/styleguide/popover': typeof StyleguidePopoverRoute
-  '/styleguide/select': typeof StyleguideSelectRoute
-  '/styleguide/separator': typeof StyleguideSeparatorRoute
-  '/styleguide/shadows': typeof StyleguideShadowsRoute
-  '/styleguide/sheet': typeof StyleguideSheetRoute
-  '/styleguide/sidebar': typeof StyleguideSidebarRoute
-  '/styleguide/skeleton': typeof StyleguideSkeletonRoute
-  '/styleguide/spacing': typeof StyleguideSpacingRoute
-  '/styleguide/table': typeof StyleguideTableRoute
-  '/styleguide/tabs': typeof StyleguideTabsRoute
-  '/styleguide/textarea': typeof StyleguideTextareaRoute
-  '/styleguide/toast': typeof StyleguideToastRoute
-  '/styleguide/typography': typeof StyleguideTypographyRoute
-  '/styleguide/': typeof StyleguideIndexRoute
+  '/styleguide/_layout': typeof StyleguideLayoutRouteWithChildren
+  '/styleguide/_layout/alerts': typeof StyleguideLayoutAlertsRoute
+  '/styleguide/_layout/avatar': typeof StyleguideLayoutAvatarRoute
+  '/styleguide/_layout/badges': typeof StyleguideLayoutBadgesRoute
+  '/styleguide/_layout/breadcrumb': typeof StyleguideLayoutBreadcrumbRoute
+  '/styleguide/_layout/buttons': typeof StyleguideLayoutButtonsRoute
+  '/styleguide/_layout/calendar': typeof StyleguideLayoutCalendarRoute
+  '/styleguide/_layout/cards': typeof StyleguideLayoutCardsRoute
+  '/styleguide/_layout/colors': typeof StyleguideLayoutColorsRoute
+  '/styleguide/_layout/command': typeof StyleguideLayoutCommandRoute
+  '/styleguide/_layout/date-picker': typeof StyleguideLayoutDatePickerRoute
+  '/styleguide/_layout/dialog': typeof StyleguideLayoutDialogRoute
+  '/styleguide/_layout/dropdown-menu': typeof StyleguideLayoutDropdownMenuRoute
+  '/styleguide/_layout/forms': typeof StyleguideLayoutFormsRoute
+  '/styleguide/_layout/input': typeof StyleguideLayoutInputRoute
+  '/styleguide/_layout/popover': typeof StyleguideLayoutPopoverRoute
+  '/styleguide/_layout/select': typeof StyleguideLayoutSelectRoute
+  '/styleguide/_layout/separator': typeof StyleguideLayoutSeparatorRoute
+  '/styleguide/_layout/shadows': typeof StyleguideLayoutShadowsRoute
+  '/styleguide/_layout/sheet': typeof StyleguideLayoutSheetRoute
+  '/styleguide/_layout/sidebar': typeof StyleguideLayoutSidebarRoute
+  '/styleguide/_layout/skeleton': typeof StyleguideLayoutSkeletonRoute
+  '/styleguide/_layout/spacing': typeof StyleguideLayoutSpacingRoute
+  '/styleguide/_layout/table': typeof StyleguideLayoutTableRoute
+  '/styleguide/_layout/tabs': typeof StyleguideLayoutTabsRoute
+  '/styleguide/_layout/textarea': typeof StyleguideLayoutTextareaRoute
+  '/styleguide/_layout/toast': typeof StyleguideLayoutToastRoute
+  '/styleguide/_layout/typography': typeof StyleguideLayoutTypographyRoute
+  '/styleguide/_layout/': typeof StyleguideLayoutIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -323,7 +331,6 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
-    | '/styleguide'
     | '/styleguide/alerts'
     | '/styleguide/avatar'
     | '/styleguide/badges'
@@ -351,71 +358,44 @@ export interface FileRouteTypes {
     | '/styleguide/textarea'
     | '/styleguide/toast'
     | '/styleguide/typography'
+    | '/styleguide'
   id:
     | '__root__'
     | '/'
     | '/styleguide/_layout'
-    | '/styleguide/alerts'
-    | '/styleguide/avatar'
-    | '/styleguide/badges'
-    | '/styleguide/breadcrumb'
-    | '/styleguide/buttons'
-    | '/styleguide/calendar'
-    | '/styleguide/cards'
-    | '/styleguide/colors'
-    | '/styleguide/command'
-    | '/styleguide/date-picker'
-    | '/styleguide/dialog'
-    | '/styleguide/dropdown-menu'
-    | '/styleguide/forms'
-    | '/styleguide/input'
-    | '/styleguide/popover'
-    | '/styleguide/select'
-    | '/styleguide/separator'
-    | '/styleguide/shadows'
-    | '/styleguide/sheet'
-    | '/styleguide/sidebar'
-    | '/styleguide/skeleton'
-    | '/styleguide/spacing'
-    | '/styleguide/table'
-    | '/styleguide/tabs'
-    | '/styleguide/textarea'
-    | '/styleguide/toast'
-    | '/styleguide/typography'
-    | '/styleguide/'
+    | '/styleguide/_layout/alerts'
+    | '/styleguide/_layout/avatar'
+    | '/styleguide/_layout/badges'
+    | '/styleguide/_layout/breadcrumb'
+    | '/styleguide/_layout/buttons'
+    | '/styleguide/_layout/calendar'
+    | '/styleguide/_layout/cards'
+    | '/styleguide/_layout/colors'
+    | '/styleguide/_layout/command'
+    | '/styleguide/_layout/date-picker'
+    | '/styleguide/_layout/dialog'
+    | '/styleguide/_layout/dropdown-menu'
+    | '/styleguide/_layout/forms'
+    | '/styleguide/_layout/input'
+    | '/styleguide/_layout/popover'
+    | '/styleguide/_layout/select'
+    | '/styleguide/_layout/separator'
+    | '/styleguide/_layout/shadows'
+    | '/styleguide/_layout/sheet'
+    | '/styleguide/_layout/sidebar'
+    | '/styleguide/_layout/skeleton'
+    | '/styleguide/_layout/spacing'
+    | '/styleguide/_layout/table'
+    | '/styleguide/_layout/tabs'
+    | '/styleguide/_layout/textarea'
+    | '/styleguide/_layout/toast'
+    | '/styleguide/_layout/typography'
+    | '/styleguide/_layout/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  StyleguideLayoutRoute: typeof StyleguideLayoutRoute
-  StyleguideAlertsRoute: typeof StyleguideAlertsRoute
-  StyleguideAvatarRoute: typeof StyleguideAvatarRoute
-  StyleguideBadgesRoute: typeof StyleguideBadgesRoute
-  StyleguideBreadcrumbRoute: typeof StyleguideBreadcrumbRoute
-  StyleguideButtonsRoute: typeof StyleguideButtonsRoute
-  StyleguideCalendarRoute: typeof StyleguideCalendarRoute
-  StyleguideCardsRoute: typeof StyleguideCardsRoute
-  StyleguideColorsRoute: typeof StyleguideColorsRoute
-  StyleguideCommandRoute: typeof StyleguideCommandRoute
-  StyleguideDatePickerRoute: typeof StyleguideDatePickerRoute
-  StyleguideDialogRoute: typeof StyleguideDialogRoute
-  StyleguideDropdownMenuRoute: typeof StyleguideDropdownMenuRoute
-  StyleguideFormsRoute: typeof StyleguideFormsRoute
-  StyleguideInputRoute: typeof StyleguideInputRoute
-  StyleguidePopoverRoute: typeof StyleguidePopoverRoute
-  StyleguideSelectRoute: typeof StyleguideSelectRoute
-  StyleguideSeparatorRoute: typeof StyleguideSeparatorRoute
-  StyleguideShadowsRoute: typeof StyleguideShadowsRoute
-  StyleguideSheetRoute: typeof StyleguideSheetRoute
-  StyleguideSidebarRoute: typeof StyleguideSidebarRoute
-  StyleguideSkeletonRoute: typeof StyleguideSkeletonRoute
-  StyleguideSpacingRoute: typeof StyleguideSpacingRoute
-  StyleguideTableRoute: typeof StyleguideTableRoute
-  StyleguideTabsRoute: typeof StyleguideTabsRoute
-  StyleguideTextareaRoute: typeof StyleguideTextareaRoute
-  StyleguideToastRoute: typeof StyleguideToastRoute
-  StyleguideTypographyRoute: typeof StyleguideTypographyRoute
-  StyleguideIndexRoute: typeof StyleguideIndexRoute
+  StyleguideLayoutRoute: typeof StyleguideLayoutRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
@@ -427,202 +407,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/styleguide/': {
-      id: '/styleguide/'
-      path: '/styleguide'
-      fullPath: '/styleguide/'
-      preLoaderRoute: typeof StyleguideIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/typography': {
-      id: '/styleguide/typography'
-      path: '/styleguide/typography'
-      fullPath: '/styleguide/typography'
-      preLoaderRoute: typeof StyleguideTypographyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/toast': {
-      id: '/styleguide/toast'
-      path: '/styleguide/toast'
-      fullPath: '/styleguide/toast'
-      preLoaderRoute: typeof StyleguideToastRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/textarea': {
-      id: '/styleguide/textarea'
-      path: '/styleguide/textarea'
-      fullPath: '/styleguide/textarea'
-      preLoaderRoute: typeof StyleguideTextareaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/tabs': {
-      id: '/styleguide/tabs'
-      path: '/styleguide/tabs'
-      fullPath: '/styleguide/tabs'
-      preLoaderRoute: typeof StyleguideTabsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/table': {
-      id: '/styleguide/table'
-      path: '/styleguide/table'
-      fullPath: '/styleguide/table'
-      preLoaderRoute: typeof StyleguideTableRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/spacing': {
-      id: '/styleguide/spacing'
-      path: '/styleguide/spacing'
-      fullPath: '/styleguide/spacing'
-      preLoaderRoute: typeof StyleguideSpacingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/skeleton': {
-      id: '/styleguide/skeleton'
-      path: '/styleguide/skeleton'
-      fullPath: '/styleguide/skeleton'
-      preLoaderRoute: typeof StyleguideSkeletonRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/sidebar': {
-      id: '/styleguide/sidebar'
-      path: '/styleguide/sidebar'
-      fullPath: '/styleguide/sidebar'
-      preLoaderRoute: typeof StyleguideSidebarRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/sheet': {
-      id: '/styleguide/sheet'
-      path: '/styleguide/sheet'
-      fullPath: '/styleguide/sheet'
-      preLoaderRoute: typeof StyleguideSheetRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/shadows': {
-      id: '/styleguide/shadows'
-      path: '/styleguide/shadows'
-      fullPath: '/styleguide/shadows'
-      preLoaderRoute: typeof StyleguideShadowsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/separator': {
-      id: '/styleguide/separator'
-      path: '/styleguide/separator'
-      fullPath: '/styleguide/separator'
-      preLoaderRoute: typeof StyleguideSeparatorRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/select': {
-      id: '/styleguide/select'
-      path: '/styleguide/select'
-      fullPath: '/styleguide/select'
-      preLoaderRoute: typeof StyleguideSelectRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/popover': {
-      id: '/styleguide/popover'
-      path: '/styleguide/popover'
-      fullPath: '/styleguide/popover'
-      preLoaderRoute: typeof StyleguidePopoverRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/input': {
-      id: '/styleguide/input'
-      path: '/styleguide/input'
-      fullPath: '/styleguide/input'
-      preLoaderRoute: typeof StyleguideInputRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/forms': {
-      id: '/styleguide/forms'
-      path: '/styleguide/forms'
-      fullPath: '/styleguide/forms'
-      preLoaderRoute: typeof StyleguideFormsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/dropdown-menu': {
-      id: '/styleguide/dropdown-menu'
-      path: '/styleguide/dropdown-menu'
-      fullPath: '/styleguide/dropdown-menu'
-      preLoaderRoute: typeof StyleguideDropdownMenuRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/dialog': {
-      id: '/styleguide/dialog'
-      path: '/styleguide/dialog'
-      fullPath: '/styleguide/dialog'
-      preLoaderRoute: typeof StyleguideDialogRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/date-picker': {
-      id: '/styleguide/date-picker'
-      path: '/styleguide/date-picker'
-      fullPath: '/styleguide/date-picker'
-      preLoaderRoute: typeof StyleguideDatePickerRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/command': {
-      id: '/styleguide/command'
-      path: '/styleguide/command'
-      fullPath: '/styleguide/command'
-      preLoaderRoute: typeof StyleguideCommandRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/colors': {
-      id: '/styleguide/colors'
-      path: '/styleguide/colors'
-      fullPath: '/styleguide/colors'
-      preLoaderRoute: typeof StyleguideColorsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/cards': {
-      id: '/styleguide/cards'
-      path: '/styleguide/cards'
-      fullPath: '/styleguide/cards'
-      preLoaderRoute: typeof StyleguideCardsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/calendar': {
-      id: '/styleguide/calendar'
-      path: '/styleguide/calendar'
-      fullPath: '/styleguide/calendar'
-      preLoaderRoute: typeof StyleguideCalendarRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/buttons': {
-      id: '/styleguide/buttons'
-      path: '/styleguide/buttons'
-      fullPath: '/styleguide/buttons'
-      preLoaderRoute: typeof StyleguideButtonsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/breadcrumb': {
-      id: '/styleguide/breadcrumb'
-      path: '/styleguide/breadcrumb'
-      fullPath: '/styleguide/breadcrumb'
-      preLoaderRoute: typeof StyleguideBreadcrumbRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/badges': {
-      id: '/styleguide/badges'
-      path: '/styleguide/badges'
-      fullPath: '/styleguide/badges'
-      preLoaderRoute: typeof StyleguideBadgesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/avatar': {
-      id: '/styleguide/avatar'
-      path: '/styleguide/avatar'
-      fullPath: '/styleguide/avatar'
-      preLoaderRoute: typeof StyleguideAvatarRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styleguide/alerts': {
-      id: '/styleguide/alerts'
-      path: '/styleguide/alerts'
-      fullPath: '/styleguide/alerts'
-      preLoaderRoute: typeof StyleguideAlertsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/styleguide/_layout': {
       id: '/styleguide/_layout'
       path: '/styleguide'
@@ -630,40 +414,273 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof StyleguideLayoutRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/styleguide/_layout/': {
+      id: '/styleguide/_layout/'
+      path: '/'
+      fullPath: '/styleguide/'
+      preLoaderRoute: typeof StyleguideLayoutIndexRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/typography': {
+      id: '/styleguide/_layout/typography'
+      path: '/typography'
+      fullPath: '/styleguide/typography'
+      preLoaderRoute: typeof StyleguideLayoutTypographyRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/toast': {
+      id: '/styleguide/_layout/toast'
+      path: '/toast'
+      fullPath: '/styleguide/toast'
+      preLoaderRoute: typeof StyleguideLayoutToastRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/textarea': {
+      id: '/styleguide/_layout/textarea'
+      path: '/textarea'
+      fullPath: '/styleguide/textarea'
+      preLoaderRoute: typeof StyleguideLayoutTextareaRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/tabs': {
+      id: '/styleguide/_layout/tabs'
+      path: '/tabs'
+      fullPath: '/styleguide/tabs'
+      preLoaderRoute: typeof StyleguideLayoutTabsRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/table': {
+      id: '/styleguide/_layout/table'
+      path: '/table'
+      fullPath: '/styleguide/table'
+      preLoaderRoute: typeof StyleguideLayoutTableRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/spacing': {
+      id: '/styleguide/_layout/spacing'
+      path: '/spacing'
+      fullPath: '/styleguide/spacing'
+      preLoaderRoute: typeof StyleguideLayoutSpacingRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/skeleton': {
+      id: '/styleguide/_layout/skeleton'
+      path: '/skeleton'
+      fullPath: '/styleguide/skeleton'
+      preLoaderRoute: typeof StyleguideLayoutSkeletonRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/sidebar': {
+      id: '/styleguide/_layout/sidebar'
+      path: '/sidebar'
+      fullPath: '/styleguide/sidebar'
+      preLoaderRoute: typeof StyleguideLayoutSidebarRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/sheet': {
+      id: '/styleguide/_layout/sheet'
+      path: '/sheet'
+      fullPath: '/styleguide/sheet'
+      preLoaderRoute: typeof StyleguideLayoutSheetRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/shadows': {
+      id: '/styleguide/_layout/shadows'
+      path: '/shadows'
+      fullPath: '/styleguide/shadows'
+      preLoaderRoute: typeof StyleguideLayoutShadowsRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/separator': {
+      id: '/styleguide/_layout/separator'
+      path: '/separator'
+      fullPath: '/styleguide/separator'
+      preLoaderRoute: typeof StyleguideLayoutSeparatorRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/select': {
+      id: '/styleguide/_layout/select'
+      path: '/select'
+      fullPath: '/styleguide/select'
+      preLoaderRoute: typeof StyleguideLayoutSelectRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/popover': {
+      id: '/styleguide/_layout/popover'
+      path: '/popover'
+      fullPath: '/styleguide/popover'
+      preLoaderRoute: typeof StyleguideLayoutPopoverRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/input': {
+      id: '/styleguide/_layout/input'
+      path: '/input'
+      fullPath: '/styleguide/input'
+      preLoaderRoute: typeof StyleguideLayoutInputRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/forms': {
+      id: '/styleguide/_layout/forms'
+      path: '/forms'
+      fullPath: '/styleguide/forms'
+      preLoaderRoute: typeof StyleguideLayoutFormsRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/dropdown-menu': {
+      id: '/styleguide/_layout/dropdown-menu'
+      path: '/dropdown-menu'
+      fullPath: '/styleguide/dropdown-menu'
+      preLoaderRoute: typeof StyleguideLayoutDropdownMenuRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/dialog': {
+      id: '/styleguide/_layout/dialog'
+      path: '/dialog'
+      fullPath: '/styleguide/dialog'
+      preLoaderRoute: typeof StyleguideLayoutDialogRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/date-picker': {
+      id: '/styleguide/_layout/date-picker'
+      path: '/date-picker'
+      fullPath: '/styleguide/date-picker'
+      preLoaderRoute: typeof StyleguideLayoutDatePickerRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/command': {
+      id: '/styleguide/_layout/command'
+      path: '/command'
+      fullPath: '/styleguide/command'
+      preLoaderRoute: typeof StyleguideLayoutCommandRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/colors': {
+      id: '/styleguide/_layout/colors'
+      path: '/colors'
+      fullPath: '/styleguide/colors'
+      preLoaderRoute: typeof StyleguideLayoutColorsRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/cards': {
+      id: '/styleguide/_layout/cards'
+      path: '/cards'
+      fullPath: '/styleguide/cards'
+      preLoaderRoute: typeof StyleguideLayoutCardsRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/calendar': {
+      id: '/styleguide/_layout/calendar'
+      path: '/calendar'
+      fullPath: '/styleguide/calendar'
+      preLoaderRoute: typeof StyleguideLayoutCalendarRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/buttons': {
+      id: '/styleguide/_layout/buttons'
+      path: '/buttons'
+      fullPath: '/styleguide/buttons'
+      preLoaderRoute: typeof StyleguideLayoutButtonsRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/breadcrumb': {
+      id: '/styleguide/_layout/breadcrumb'
+      path: '/breadcrumb'
+      fullPath: '/styleguide/breadcrumb'
+      preLoaderRoute: typeof StyleguideLayoutBreadcrumbRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/badges': {
+      id: '/styleguide/_layout/badges'
+      path: '/badges'
+      fullPath: '/styleguide/badges'
+      preLoaderRoute: typeof StyleguideLayoutBadgesRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/avatar': {
+      id: '/styleguide/_layout/avatar'
+      path: '/avatar'
+      fullPath: '/styleguide/avatar'
+      preLoaderRoute: typeof StyleguideLayoutAvatarRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
+    '/styleguide/_layout/alerts': {
+      id: '/styleguide/_layout/alerts'
+      path: '/alerts'
+      fullPath: '/styleguide/alerts'
+      preLoaderRoute: typeof StyleguideLayoutAlertsRouteImport
+      parentRoute: typeof StyleguideLayoutRoute
+    }
   }
 }
 
+interface StyleguideLayoutRouteChildren {
+  StyleguideLayoutAlertsRoute: typeof StyleguideLayoutAlertsRoute
+  StyleguideLayoutAvatarRoute: typeof StyleguideLayoutAvatarRoute
+  StyleguideLayoutBadgesRoute: typeof StyleguideLayoutBadgesRoute
+  StyleguideLayoutBreadcrumbRoute: typeof StyleguideLayoutBreadcrumbRoute
+  StyleguideLayoutButtonsRoute: typeof StyleguideLayoutButtonsRoute
+  StyleguideLayoutCalendarRoute: typeof StyleguideLayoutCalendarRoute
+  StyleguideLayoutCardsRoute: typeof StyleguideLayoutCardsRoute
+  StyleguideLayoutColorsRoute: typeof StyleguideLayoutColorsRoute
+  StyleguideLayoutCommandRoute: typeof StyleguideLayoutCommandRoute
+  StyleguideLayoutDatePickerRoute: typeof StyleguideLayoutDatePickerRoute
+  StyleguideLayoutDialogRoute: typeof StyleguideLayoutDialogRoute
+  StyleguideLayoutDropdownMenuRoute: typeof StyleguideLayoutDropdownMenuRoute
+  StyleguideLayoutFormsRoute: typeof StyleguideLayoutFormsRoute
+  StyleguideLayoutInputRoute: typeof StyleguideLayoutInputRoute
+  StyleguideLayoutPopoverRoute: typeof StyleguideLayoutPopoverRoute
+  StyleguideLayoutSelectRoute: typeof StyleguideLayoutSelectRoute
+  StyleguideLayoutSeparatorRoute: typeof StyleguideLayoutSeparatorRoute
+  StyleguideLayoutShadowsRoute: typeof StyleguideLayoutShadowsRoute
+  StyleguideLayoutSheetRoute: typeof StyleguideLayoutSheetRoute
+  StyleguideLayoutSidebarRoute: typeof StyleguideLayoutSidebarRoute
+  StyleguideLayoutSkeletonRoute: typeof StyleguideLayoutSkeletonRoute
+  StyleguideLayoutSpacingRoute: typeof StyleguideLayoutSpacingRoute
+  StyleguideLayoutTableRoute: typeof StyleguideLayoutTableRoute
+  StyleguideLayoutTabsRoute: typeof StyleguideLayoutTabsRoute
+  StyleguideLayoutTextareaRoute: typeof StyleguideLayoutTextareaRoute
+  StyleguideLayoutToastRoute: typeof StyleguideLayoutToastRoute
+  StyleguideLayoutTypographyRoute: typeof StyleguideLayoutTypographyRoute
+  StyleguideLayoutIndexRoute: typeof StyleguideLayoutIndexRoute
+}
+
+const StyleguideLayoutRouteChildren: StyleguideLayoutRouteChildren = {
+  StyleguideLayoutAlertsRoute: StyleguideLayoutAlertsRoute,
+  StyleguideLayoutAvatarRoute: StyleguideLayoutAvatarRoute,
+  StyleguideLayoutBadgesRoute: StyleguideLayoutBadgesRoute,
+  StyleguideLayoutBreadcrumbRoute: StyleguideLayoutBreadcrumbRoute,
+  StyleguideLayoutButtonsRoute: StyleguideLayoutButtonsRoute,
+  StyleguideLayoutCalendarRoute: StyleguideLayoutCalendarRoute,
+  StyleguideLayoutCardsRoute: StyleguideLayoutCardsRoute,
+  StyleguideLayoutColorsRoute: StyleguideLayoutColorsRoute,
+  StyleguideLayoutCommandRoute: StyleguideLayoutCommandRoute,
+  StyleguideLayoutDatePickerRoute: StyleguideLayoutDatePickerRoute,
+  StyleguideLayoutDialogRoute: StyleguideLayoutDialogRoute,
+  StyleguideLayoutDropdownMenuRoute: StyleguideLayoutDropdownMenuRoute,
+  StyleguideLayoutFormsRoute: StyleguideLayoutFormsRoute,
+  StyleguideLayoutInputRoute: StyleguideLayoutInputRoute,
+  StyleguideLayoutPopoverRoute: StyleguideLayoutPopoverRoute,
+  StyleguideLayoutSelectRoute: StyleguideLayoutSelectRoute,
+  StyleguideLayoutSeparatorRoute: StyleguideLayoutSeparatorRoute,
+  StyleguideLayoutShadowsRoute: StyleguideLayoutShadowsRoute,
+  StyleguideLayoutSheetRoute: StyleguideLayoutSheetRoute,
+  StyleguideLayoutSidebarRoute: StyleguideLayoutSidebarRoute,
+  StyleguideLayoutSkeletonRoute: StyleguideLayoutSkeletonRoute,
+  StyleguideLayoutSpacingRoute: StyleguideLayoutSpacingRoute,
+  StyleguideLayoutTableRoute: StyleguideLayoutTableRoute,
+  StyleguideLayoutTabsRoute: StyleguideLayoutTabsRoute,
+  StyleguideLayoutTextareaRoute: StyleguideLayoutTextareaRoute,
+  StyleguideLayoutToastRoute: StyleguideLayoutToastRoute,
+  StyleguideLayoutTypographyRoute: StyleguideLayoutTypographyRoute,
+  StyleguideLayoutIndexRoute: StyleguideLayoutIndexRoute,
+}
+
+const StyleguideLayoutRouteWithChildren =
+  StyleguideLayoutRoute._addFileChildren(StyleguideLayoutRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  StyleguideLayoutRoute: StyleguideLayoutRoute,
-  StyleguideAlertsRoute: StyleguideAlertsRoute,
-  StyleguideAvatarRoute: StyleguideAvatarRoute,
-  StyleguideBadgesRoute: StyleguideBadgesRoute,
-  StyleguideBreadcrumbRoute: StyleguideBreadcrumbRoute,
-  StyleguideButtonsRoute: StyleguideButtonsRoute,
-  StyleguideCalendarRoute: StyleguideCalendarRoute,
-  StyleguideCardsRoute: StyleguideCardsRoute,
-  StyleguideColorsRoute: StyleguideColorsRoute,
-  StyleguideCommandRoute: StyleguideCommandRoute,
-  StyleguideDatePickerRoute: StyleguideDatePickerRoute,
-  StyleguideDialogRoute: StyleguideDialogRoute,
-  StyleguideDropdownMenuRoute: StyleguideDropdownMenuRoute,
-  StyleguideFormsRoute: StyleguideFormsRoute,
-  StyleguideInputRoute: StyleguideInputRoute,
-  StyleguidePopoverRoute: StyleguidePopoverRoute,
-  StyleguideSelectRoute: StyleguideSelectRoute,
-  StyleguideSeparatorRoute: StyleguideSeparatorRoute,
-  StyleguideShadowsRoute: StyleguideShadowsRoute,
-  StyleguideSheetRoute: StyleguideSheetRoute,
-  StyleguideSidebarRoute: StyleguideSidebarRoute,
-  StyleguideSkeletonRoute: StyleguideSkeletonRoute,
-  StyleguideSpacingRoute: StyleguideSpacingRoute,
-  StyleguideTableRoute: StyleguideTableRoute,
-  StyleguideTabsRoute: StyleguideTabsRoute,
-  StyleguideTextareaRoute: StyleguideTextareaRoute,
-  StyleguideToastRoute: StyleguideToastRoute,
-  StyleguideTypographyRoute: StyleguideTypographyRoute,
-  StyleguideIndexRoute: StyleguideIndexRoute,
+  StyleguideLayoutRoute: StyleguideLayoutRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

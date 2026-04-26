@@ -12,7 +12,7 @@ import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { FileText, Calendar, User } from 'lucide-react';
 
-export const Route = createFileRoute('/styleguide/cards')({
+export const Route = createFileRoute('/styleguide/_layout/cards')({
    component: CardsPage,
 });
 
